@@ -107,7 +107,7 @@
         <scene sceneID="yIx-89-6D0">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6aE-8C-dyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="N5e-jZ-mi2" sceneMemberID="viewController">
+                <viewController id="N5e-jZ-mi2" customClass="ViewController" customModule="provaios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yDc-Vo-Dj4"/>
                         <viewControllerLayoutGuide type="bottom" id="dT3-h7-knX"/>
@@ -137,8 +137,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="N5e-jZ-mi2" id="CaZ-6b-abF"/>
-                                    <outlet property="delegate" destination="N5e-jZ-mi2" id="jXP-xL-igL"/>
+                                    <outlet property="dataSource" destination="N5e-jZ-mi2" id="LKF-qF-QgH"/>
+                                    <outlet property="delegate" destination="N5e-jZ-mi2" id="lAI-oj-mTC"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -149,6 +149,9 @@
                             <constraint firstAttribute="trailing" secondItem="bWq-Xm-VFz" secondAttribute="trailing" id="nQG-ix-ubI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="table" destination="MyJ-hd-BEe" id="Erl-n1-93b"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="760.79999999999995" y="59.820089955022496"/>
