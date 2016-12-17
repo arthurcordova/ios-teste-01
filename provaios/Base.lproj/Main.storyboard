@@ -77,7 +77,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="mta-qB-ZHb" kind="show" id="vFB-7K-X3m"/>
+                                    <segue destination="mta-qB-ZHb" kind="show" id="PAW-kh-cJj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -142,7 +142,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gTu-K2-unA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="60"/>
+            <point key="canvasLocation" x="1036" y="-54"/>
         </scene>
     </scenes>
     <resources>

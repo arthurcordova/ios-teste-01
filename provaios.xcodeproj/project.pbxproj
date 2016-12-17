@@ -16,6 +16,8 @@
 		F421DA7A1E037B9E004838B7 /* provaiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F421DA791E037B9E004838B7 /* provaiosTests.swift */; };
 		F421DA851E037B9E004838B7 /* provaiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F421DA841E037B9E004838B7 /* provaiosUITests.swift */; };
 		F4F05DC41E059B880070C62C /* FilmeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F05DC31E059B880070C62C /* FilmeController.swift */; };
+		F4F05DC91E05C2A80070C62C /* FilmeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F05DC71E05C2A80070C62C /* FilmeCellTableViewCell.swift */; };
+		F4F05DCA1E05C2A80070C62C /* FilmeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4F05DC81E05C2A80070C62C /* FilmeCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		F421DA841E037B9E004838B7 /* provaiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = provaiosUITests.swift; sourceTree = "<group>"; };
 		F421DA861E037B9E004838B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4F05DC31E059B880070C62C /* FilmeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmeController.swift; sourceTree = "<group>"; };
+		F4F05DC71E05C2A80070C62C /* FilmeCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmeCellTableViewCell.swift; sourceTree = "<group>"; };
+		F4F05DC81E05C2A80070C62C /* FilmeCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilmeCellTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				F4F05DC31E059B880070C62C /* FilmeController.swift */,
 				F421DA681E037B9E004838B7 /* Main.storyboard */,
 				F421DA6D1E037B9E004838B7 /* LaunchScreen.storyboard */,
+				F4F05DC71E05C2A80070C62C /* FilmeCellTableViewCell.swift */,
+				F4F05DC81E05C2A80070C62C /* FilmeCellTableViewCell.xib */,
 			);
 			path = provaios;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 				F421DA6F1E037B9E004838B7 /* LaunchScreen.storyboard in Resources */,
 				F421DA6C1E037B9E004838B7 /* Assets.xcassets in Resources */,
 				F421DA6A1E037B9E004838B7 /* Main.storyboard in Resources */,
+				F4F05DCA1E05C2A80070C62C /* FilmeCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +284,7 @@
 				F4F05DC41E059B880070C62C /* FilmeController.swift in Sources */,
 				F421DA651E037B9E004838B7 /* AppDelegate.swift in Sources */,
 				F406D1E11E04D691001BC261 /* Filme.swift in Sources */,
+				F4F05DC91E05C2A80070C62C /* FilmeCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

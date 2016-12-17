@@ -1,5 +1,5 @@
 //
-//  FilmeController.swift
+//  ViewFilmeController.swift
 //  provaios
 //
 //  Created by Arthur on 17/12/16.
@@ -8,12 +8,11 @@
 
 import UIKit
 
-class FilmeController: UITableViewController {
-    
+class ViewFilmeController: UITableViewController {
     
     @IBOutlet var table: UITableView!
     
-    let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
+    let animals: [String] = ["Arthur", "AAAAA", "Camel", "Sheep", "Goat"]
     let cellIdentifier = "Cell"
     
     
@@ -21,11 +20,6 @@ class FilmeController: UITableViewController {
         super.viewDidLoad()
         
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-        
-        let xib = UINib(nibName: "FilmeCellTableViewCell", bundle: nil)
-        self.tableView.register(xib, forCellReuseIdentifier: cellIdentifier)
-
-        
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -39,10 +33,10 @@ class FilmeController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // create a new cell if needed or reuse an old one
-        let cell:FilmeCellTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! FilmeCellTableViewCell!
+        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as UITableViewCell!
         
         // set the text from the data model
-        cell.label1.text = self.animals[indexPath.row]
+        cell.textLabel?.text = self.animals[indexPath.row]
         
         return cell
     }
@@ -51,5 +45,4 @@ class FilmeController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
     }
-    
 }
