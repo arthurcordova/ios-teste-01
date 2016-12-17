@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F406D1E11E04D691001BC261 /* Canal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406D1E01E04D691001BC261 /* Canal.swift */; };
+		F406D1E11E04D691001BC261 /* Filme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406D1E01E04D691001BC261 /* Filme.swift */; };
 		F421DA651E037B9E004838B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F421DA641E037B9E004838B7 /* AppDelegate.swift */; };
 		F421DA671E037B9E004838B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F421DA661E037B9E004838B7 /* ViewController.swift */; };
 		F421DA6A1E037B9E004838B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F421DA681E037B9E004838B7 /* Main.storyboard */; };
@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F406D1E01E04D691001BC261 /* Canal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canal.swift; sourceTree = "<group>"; };
+		F406D1E01E04D691001BC261 /* Filme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filme.swift; sourceTree = "<group>"; };
 		F421DA611E037B9E004838B7 /* provaios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = provaios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F421DA641E037B9E004838B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F421DA661E037B9E004838B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		F406D1DF1E04D67C001BC261 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				F406D1E01E04D691001BC261 /* Canal.swift */,
+				F406D1E01E04D691001BC261 /* Filme.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 			files = (
 				F421DA671E037B9E004838B7 /* ViewController.swift in Sources */,
 				F421DA651E037B9E004838B7 /* AppDelegate.swift in Sources */,
-				F406D1E11E04D691001BC261 /* Canal.swift in Sources */,
+				F406D1E11E04D691001BC261 /* Filme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

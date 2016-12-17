@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Canal {
+class Filme {
     
     var titulo: String!
     var subTitulo: String!
