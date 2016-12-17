@@ -18,6 +18,7 @@
 		F4F05DC41E059B880070C62C /* FilmeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F05DC31E059B880070C62C /* FilmeController.swift */; };
 		F4F05DC91E05C2A80070C62C /* FilmeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F05DC71E05C2A80070C62C /* FilmeCellTableViewCell.swift */; };
 		F4F05DCA1E05C2A80070C62C /* FilmeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4F05DC81E05C2A80070C62C /* FilmeCellTableViewCell.xib */; };
+		F4F05DCD1E05D3D40070C62C /* FilmesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F05DCC1E05D3D40070C62C /* FilmesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F4F05DC31E059B880070C62C /* FilmeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmeController.swift; sourceTree = "<group>"; };
 		F4F05DC71E05C2A80070C62C /* FilmeCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmeCellTableViewCell.swift; sourceTree = "<group>"; };
 		F4F05DC81E05C2A80070C62C /* FilmeCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilmeCellTableViewCell.xib; sourceTree = "<group>"; };
+		F4F05DCC1E05D3D40070C62C /* FilmesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		F421DA631E037B9E004838B7 /* provaios */ = {
 			isa = PBXGroup;
 			children = (
+				F4F05DCB1E05D3920070C62C /* service */,
 				F406D1DF1E04D67C001BC261 /* model */,
 				F421DA641E037B9E004838B7 /* AppDelegate.swift */,
 				F421DA701E037B9E004838B7 /* Info.plist */,
@@ -143,6 +146,14 @@
 				F421DA861E037B9E004838B7 /* Info.plist */,
 			);
 			path = provaiosUITests;
+			sourceTree = "<group>";
+		};
+		F4F05DCB1E05D3920070C62C /* service */ = {
+			isa = PBXGroup;
+			children = (
+				F4F05DCC1E05D3D40070C62C /* FilmesService.swift */,
+			);
+			name = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +296,7 @@
 				F421DA651E037B9E004838B7 /* AppDelegate.swift in Sources */,
 				F406D1E11E04D691001BC261 /* Filme.swift in Sources */,
 				F4F05DC91E05C2A80070C62C /* FilmeCellTableViewCell.swift in Sources */,
+				F4F05DCD1E05D3D40070C62C /* FilmesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
