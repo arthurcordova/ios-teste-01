@@ -77,7 +77,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="N5e-jZ-mi2" kind="show" id="6Iy-K1-zeU"/>
+                                    <segue destination="mta-qB-ZHb" kind="show" id="vFB-7K-X3m"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -103,58 +103,46 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="59.820089955022496"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="yIx-89-6D0">
+        <!--Filme Controller-->
+        <scene sceneID="nZy-ha-w2V">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6aE-8C-dyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="N5e-jZ-mi2" customClass="ViewController" customModule="provaios" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yDc-Vo-Dj4"/>
-                        <viewControllerLayoutGuide type="bottom" id="dT3-h7-knX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OG0-IT-8rV">
+                <tableViewController id="mta-qB-ZHb" customClass="FilmeController" customModule="provaios" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="YNB-Mr-YmU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWq-Xm-VFz">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Filmes" id="IzT-pm-lF4"/>
-                                </items>
-                            </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MyJ-hd-BEe">
-                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="pff-Q2-Vpz">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pff-Q2-Vpz" id="ijc-ve-oUe">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="N5e-jZ-mi2" id="LKF-qF-QgH"/>
-                                    <outlet property="delegate" destination="N5e-jZ-mi2" id="lAI-oj-mTC"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="bWq-Xm-VFz" firstAttribute="leading" secondItem="OG0-IT-8rV" secondAttribute="leading" id="0RV-QJ-wSR"/>
-                            <constraint firstItem="bWq-Xm-VFz" firstAttribute="top" secondItem="yDc-Vo-Dj4" secondAttribute="bottom" constant="8" id="Ydw-xv-6XS"/>
-                            <constraint firstAttribute="trailing" secondItem="bWq-Xm-VFz" secondAttribute="trailing" id="nQG-ix-ubI"/>
-                        </constraints>
-                    </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="ye6-Xn-oZH">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ye6-Xn-oZH" id="nLe-U9-o5F">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="teste" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgI-kZ-DD3">
+                                            <rect key="frame" x="261" y="8" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mta-qB-ZHb" id="tE7-0Q-MHW"/>
+                            <outlet property="delegate" destination="mta-qB-ZHb" id="bBi-5i-sjH"/>
+                        </connections>
+                    </tableView>
                     <connections>
-                        <outlet property="table" destination="MyJ-hd-BEe" id="Erl-n1-93b"/>
+                        <outlet property="table" destination="YNB-Mr-YmU" id="4e3-9P-SRY"/>
+                        <outlet property="tableView" destination="YNB-Mr-YmU" id="sml-tf-fqE"/>
                     </connections>
-                </viewController>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gTu-K2-unA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.79999999999995" y="59.820089955022496"/>
+            <point key="canvasLocation" x="762" y="60"/>
         </scene>
     </scenes>
     <resources>
