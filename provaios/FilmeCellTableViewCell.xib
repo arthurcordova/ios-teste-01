@@ -29,7 +29,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ic_movie" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-N0-pec">
+                    <imageView userInteractionEnabled="NO" alpha="0.41999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ic_movie" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-N0-pec">
                         <rect key="frame" x="8" y="8" width="45" height="45"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="45" id="tA3-mf-g2J"/>
