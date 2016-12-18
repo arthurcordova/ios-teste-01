@@ -42,7 +42,7 @@ class FilmeController: UITableViewController {
         let cell:FilmeCellTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! FilmeCellTableViewCell!
         
         // set the text from the data model
-        cell.label1.text = self.animals[indexPath.row]
+//        cell.label1.text = self.animals[indexPath.row]
         
         return cell
     }

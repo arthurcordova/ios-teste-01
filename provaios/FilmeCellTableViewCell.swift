@@ -10,9 +10,11 @@ import UIKit
 
 class FilmeCellTableViewCell: UITableViewCell {
     
-    @IBOutlet var label1: UILabel!
-    @IBOutlet var label2: UILabel!
-
+    
+    @IBOutlet var titulo: UILabel!
+    @IBOutlet var duracao: UILabel!
+    @IBOutlet var subtitulo: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
