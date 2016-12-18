@@ -121,9 +121,9 @@
 				F421DA701E037B9E004838B7 /* Info.plist */,
 				F421DA661E037B9E004838B7 /* ViewController.swift */,
 				F4F05DC31E059B880070C62C /* FilmeController.swift */,
+				F4F05DC71E05C2A80070C62C /* FilmeCellTableViewCell.swift */,
 				F421DA681E037B9E004838B7 /* Main.storyboard */,
 				F421DA6D1E037B9E004838B7 /* LaunchScreen.storyboard */,
-				F4F05DC71E05C2A80070C62C /* FilmeCellTableViewCell.swift */,
 				F4F05DC81E05C2A80070C62C /* FilmeCellTableViewCell.xib */,
 				F421DA6B1E037B9E004838B7 /* Assets.xcassets */,
 			);
