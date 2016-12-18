@@ -177,10 +177,10 @@
             </objects>
             <point key="canvasLocation" x="1965.5999999999999" y="1014.2428785607198"/>
         </scene>
-        <!--View Controller-->
+        <!--Filmes View Controller-->
         <scene sceneID="it9-Hz-m9j">
             <objects>
-                <viewController id="BeR-rk-4KN" sceneMemberID="viewController">
+                <viewController id="BeR-rk-4KN" customClass="FilmesViewController" customModule="provaios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZCb-2F-ymN"/>
                         <viewControllerLayoutGuide type="bottom" id="QXO-cQ-EnX"/>
@@ -196,15 +196,32 @@
                                     <navigationItem title="Filmes" id="Vpp-jv-dUw"/>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QHt-9m-Q20">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QHt-9m-Q20">
                                 <rect key="frame" x="0.0" y="72" width="375" height="546"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="m2x-1g-6ui">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m2x-1g-6ui" id="rlU-RY-bs9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BeR-rk-4KN" id="Sbw-fP-nvg"/>
+                                    <outlet property="delegate" destination="BeR-rk-4KN" id="6Tx-GZ-rb9"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="MYH-Pd-VMc"/>
+                    <connections>
+                        <outlet property="table" destination="QHt-9m-Q20" id="ixQ-ZS-5zj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybV-gR-PS9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
