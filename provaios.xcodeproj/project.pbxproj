@@ -117,17 +117,12 @@
 		F421DA631E037B9E004838B7 /* provaios */ = {
 			isa = PBXGroup;
 			children = (
+				F421DA701E037B9E004838B7 /* Info.plist */,
+				F421DA641E037B9E004838B7 /* AppDelegate.swift */,
 				F4F05DCB1E05D3920070C62C /* service */,
 				F406D1DF1E04D67C001BC261 /* model */,
-				F421DA641E037B9E004838B7 /* AppDelegate.swift */,
-				F421DA701E037B9E004838B7 /* Info.plist */,
-				F421DA661E037B9E004838B7 /* ViewController.swift */,
-				F4F05DC31E059B880070C62C /* FilmeController.swift */,
-				F4F05DC71E05C2A80070C62C /* FilmeCellTableViewCell.swift */,
-				F4F05DD01E06E97C0070C62C /* FilmesViewController.swift */,
-				F421DA681E037B9E004838B7 /* Main.storyboard */,
-				F421DA6D1E037B9E004838B7 /* LaunchScreen.storyboard */,
-				F4F05DC81E05C2A80070C62C /* FilmeCellTableViewCell.xib */,
+				F4F05DD21E06F2AD0070C62C /* control */,
+				F4F05DD31E06F2CC0070C62C /* view */,
 				F421DA6B1E037B9E004838B7 /* Assets.xcassets */,
 			);
 			path = provaios;
@@ -157,6 +152,27 @@
 				F4F05DCC1E05D3D40070C62C /* FilmesService.swift */,
 			);
 			name = service;
+			sourceTree = "<group>";
+		};
+		F4F05DD21E06F2AD0070C62C /* control */ = {
+			isa = PBXGroup;
+			children = (
+				F421DA661E037B9E004838B7 /* ViewController.swift */,
+				F4F05DC31E059B880070C62C /* FilmeController.swift */,
+				F4F05DC71E05C2A80070C62C /* FilmeCellTableViewCell.swift */,
+				F4F05DD01E06E97C0070C62C /* FilmesViewController.swift */,
+			);
+			name = control;
+			sourceTree = "<group>";
+		};
+		F4F05DD31E06F2CC0070C62C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F421DA6D1E037B9E004838B7 /* LaunchScreen.storyboard */,
+				F4F05DC81E05C2A80070C62C /* FilmeCellTableViewCell.xib */,
+				F421DA681E037B9E004838B7 /* Main.storyboard */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

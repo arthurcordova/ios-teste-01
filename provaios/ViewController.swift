@@ -14,9 +14,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let service = FilmesService()
-        service.getFilmes()
+//        let service = FilmesService()
+//        service.getFilmes()
         
     }
     

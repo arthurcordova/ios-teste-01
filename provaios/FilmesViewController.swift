@@ -12,7 +12,7 @@ class FilmesViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet var table: UITableView!
     
-    let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
+    var filmes: Array<Filme> = []
     let cellIdentifier = "Cell"
 
     override func viewDidLoad() {
@@ -25,15 +25,19 @@ class FilmesViewController: UIViewController, UITableViewDataSource, UITableView
         
         table.delegate = self
         table.dataSource = self
+        
+        FilmesService().getFilmes()
+//        getFilmes()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.animals.count
+        return self.filmes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:FilmeCellTableViewCell = table.dequeueReusableCell(withIdentifier: cellIdentifier) as! FilmeCellTableViewCell!
-        cell.label1.text = self.animals[indexPath.row]
+        let filme = self.filmes[indexPath.row] as Filme
+        cell.label1.text = filme.titulo
         
         return cell
     }
@@ -41,6 +45,20 @@ class FilmesViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Linha \(indexPath.row).")
     }
+    
+//    func getFilmes() {
+//        let service = FilmesService()
+//        service.getFilmes(callback: {(filmes: Array<Filme>, error: NSError!) in
+//            if (error != nil) {
+//                //Alerta.alerta("Erro", mensagem: "erro", viewController: self)
+//            } else {
+//                self.filmes = filmes
+//                self.table.reloadData()
+//                
+//            }
+//        } as! (Array<Filme>, NSError?) -> Void)
+//    }
+
 
 
     
