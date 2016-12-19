@@ -32,6 +32,7 @@ class FavoritoViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidAppear(animated)
         
         filmes = Favorito.Data.filmes
+        self.table.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,13 +50,15 @@ class FavoritoViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let filme = filmes[indexPath.row]
-        let addAlerta = UIAlertController(title: "Sinopse", message: filme.sinopse, preferredStyle: UIAlertControllerStyle.alert)
-        addAlerta.addAction(UIAlertAction(title: "Add Favoritos", style: .default, handler: { (action: UIAlertAction!) in
-            
+        let addAlerta = UIAlertController(title: "Remover", message: "Deseja remover o filme " + filme.titulo + " dos favoritos ?", preferredStyle: UIAlertControllerStyle.alert)
+        addAlerta.addAction(UIAlertAction(title: "Sim", style: .default, handler: { (action: UIAlertAction!) in
+                Favorito.Data.filmes.remove(at: indexPath.row)
+                self.filmes = Favorito.Data.filmes
+                self.table.reloadData()
                        
         }))
         
-        addAlerta.addAction(UIAlertAction(title: "Fechar", style: .cancel, handler: nil))
+        addAlerta.addAction(UIAlertAction(title: "Não", style: .cancel, handler: nil))
         present(addAlerta, animated: true, completion: nil)
         self.table.deselectRow(at: indexPath, animated:true)
         
