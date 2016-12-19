@@ -171,7 +171,6 @@
 				F4F05DC71E05C2A80070C62C /* FilmeCellTableViewCell.swift */,
 				F4F05DD01E06E97C0070C62C /* FilmesViewController.swift */,
 				F414794B1E076B5D004F71A6 /* FilmeDetalheViewController.swift */,
-				F414794C1E076B5D004F71A6 /* FilmeDetalheViewController.xib */,
 				F41479511E077F1F004F71A6 /* FavoritoViewController.swift */,
 			);
 			name = control;
@@ -180,6 +179,7 @@
 		F4F05DD31E06F2CC0070C62C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F414794C1E076B5D004F71A6 /* FilmeDetalheViewController.xib */,
 				F421DA6D1E037B9E004838B7 /* LaunchScreen.storyboard */,
 				F4F05DC81E05C2A80070C62C /* FilmeCellTableViewCell.xib */,
 				F421DA681E037B9E004838B7 /* Main.storyboard */,

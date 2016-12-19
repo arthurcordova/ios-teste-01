@@ -27,28 +27,14 @@ class FavoritoViewController: UIViewController, UITableViewDataSource, UITableVi
         table.delegate = self
         table.dataSource = self
         
-        let url=URL(string:"http://www.mocky.io/v2/58559bcb2c00004d1d598d5b")
-        do {
-            print("Arthur")
-            let allContactsData = try Data(contentsOf: url!)
-            let allContacts = try JSONSerialization.jsonObject(with: allContactsData, options: JSONSerialization.ReadingOptions.allowFragments) as! [String : AnyObject]
-            if let arrJSON = allContacts["filmes"] {
-                for index in 0...arrJSON.count-1 {
-                    
-                    let aObject = arrJSON[index] as! [String : AnyObject]
-                    
-                    let f = Filme()
-                    f.titulo = aObject["titulo"] as! String
-                    f.subTitulo = aObject["subtitulo"] as! String
-                    f.duracao = aObject["duracao"] as! String
-                    f.sinopse = aObject["sinopse"] as! String
-                    filmes.append(f)
-                }
-            }
-        }
-        catch {
-            
-        }
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        filmes = favorito.filmes
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -144,10 +144,10 @@
             </objects>
             <point key="canvasLocation" x="1017" y="-89"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorito View Controller-->
         <scene sceneID="LCM-qf-MPC">
             <objects>
-                <viewController id="K5O-Mg-4ve" sceneMemberID="viewController">
+                <viewController id="K5O-Mg-4ve" customClass="FavoritoViewController" customModule="provaios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oQ0-oU-mwu"/>
                         <viewControllerLayoutGuide type="bottom" id="gsp-UY-5O1"/>
@@ -167,11 +167,28 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="546"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="66v-Lj-UBI">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="66v-Lj-UBI" id="4zo-Qs-hi8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="K5O-Mg-4ve" id="fhq-iQ-N9f"/>
+                                    <outlet property="delegate" destination="K5O-Mg-4ve" id="cLn-9A-z0S"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="aqe-WL-uEZ"/>
+                    <connections>
+                        <outlet property="table" destination="9Ro-GC-b9f" id="50b-pK-6PR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5P-63-fOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
