@@ -13,7 +13,6 @@ class FavoritoViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet var table: UITableView!
     
     var filmes: Array<Filme> = []
-    var favorito = Favorito()
     let cellIdentifier = "Cell"
     
     override func viewDidLoad() {
@@ -27,14 +26,12 @@ class FavoritoViewController: UIViewController, UITableViewDataSource, UITableVi
         table.delegate = self
         table.dataSource = self
         
-        
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        filmes = favorito.filmes
+        filmes = Favorito.Data.filmes
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,8 +52,7 @@ class FavoritoViewController: UIViewController, UITableViewDataSource, UITableVi
         let addAlerta = UIAlertController(title: "Sinopse", message: filme.sinopse, preferredStyle: UIAlertControllerStyle.alert)
         addAlerta.addAction(UIAlertAction(title: "Add Favoritos", style: .default, handler: { (action: UIAlertAction!) in
             
-            self.favorito.adicionar(filme: filme)
-            
+                       
         }))
         
         addAlerta.addAction(UIAlertAction(title: "Fechar", style: .cancel, handler: nil))

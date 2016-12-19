@@ -6,22 +6,15 @@
 //  Copyright © 2016 Arthur. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class Favorito {
+struct Favorito {
     
-    var filmes: Array<Filme> = []
     
-    init() {
+    struct Data {
+        
+        static var filmes: Array<Filme> = []
         
     }
     
-    func adicionar(filme: Filme) -> Void {
-        self.filmes.append(filme)
-    }
-    
-    func remover(posicao: Int) -> Void {
-        self.filmes.remove(at: posicao)
-    }
-
 }

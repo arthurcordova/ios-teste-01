@@ -69,7 +69,7 @@ class FilmesViewController: UIViewController, UITableViewDataSource, UITableView
         let addAlerta = UIAlertController(title: "Sinopse", message: filme.sinopse, preferredStyle: UIAlertControllerStyle.alert)
         addAlerta.addAction(UIAlertAction(title: "Add Favoritos", style: .default, handler: { (action: UIAlertAction!) in
             
-            self.favorito.adicionar(filme: filme)
+            Favorito.Data.filmes.append(filme)
             
         }))
         
