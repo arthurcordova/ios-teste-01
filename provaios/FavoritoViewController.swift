@@ -8,14 +8,14 @@
 
 import UIKit
 
-class FilmesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class FavoritoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var table: UITableView!
     
     var filmes: Array<Filme> = []
     var favorito = Favorito()
     let cellIdentifier = "Cell"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,7 +49,7 @@ class FilmesViewController: UIViewController, UITableViewDataSource, UITableView
         catch {
             
         }
-           }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.filmes.count
