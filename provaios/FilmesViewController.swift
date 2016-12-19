@@ -26,16 +26,40 @@ class FilmesViewController: UIViewController, UITableViewDataSource, UITableView
         table.delegate = self
         table.dataSource = self
         
+        let url=URL(string:"http://www.mocky.io/v2/58559bcb2c00004d1d598d5b")
+        do {
+            print("Arthur")
+            let allContactsData = try Data(contentsOf: url!)
+            let allContacts = try JSONSerialization.jsonObject(with: allContactsData, options: JSONSerialization.ReadingOptions.allowFragments) as! [String : AnyObject]
+            if let arrJSON = allContacts["filmes"] {
+                for index in 0...arrJSON.count-1 {
+                    
+                    let aObject = arrJSON[index] as! [String : AnyObject]
+                    
+                    let f = Filme()
+                    f.titulo = aObject["titulo"] as! String
+                    f.subTitulo = aObject["subtitulo"] as! String
+                    f.duracao = aObject["duracao"] as! String
+                    f.sinopse = aObject["sinopse"] as! String
+                    filmes.append(f)
+                }
+            }
+        }
+        catch {
+            
+        }
+
+        
         let f = Filme()
         f.titulo = "Senhor do anéis"
         f.subTitulo = "As duas torres"
         f.duracao = "250min"
         f.sinopse = "Após a captura de Merry (Dominic Monaghan) e Pippy (Billy Boyd) pelos orcs, a Sociedade do Anel é dissolvida. Enquanto que Frodo (Elijah Wood) e Sam (Sean Astin) seguem sua jornada rumo à Montanha da Perdição para destruir o Um Anel, Aragorn (Viggo Mortensen), Legolas (Orlando Bloom) e Gimli (John Rhys-Davies) partem para resgatar os hobbits sequestrados."
         
-        filmes.append(f)
         
         
-        FilmesService().getFilmes()
+        
+//        FilmesService().getFilmes()
 //        getFilmes()
     }
     
