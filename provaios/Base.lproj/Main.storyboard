@@ -209,7 +209,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="b3B-m8-Jxl" kind="showDetail" id="3rk-vi-JK5"/>
+                                            <segue destination="b3B-m8-Jxl" kind="showDetail" trigger="accessoryAction" id="2xO-WY-ZmT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

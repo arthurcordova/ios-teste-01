@@ -53,27 +53,17 @@ class FilmesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Linha \(indexPath.row).")
+        let filme = filmes[indexPath.row]
+        let addAlerta = UIAlertController(title: "Sinopse", message: filme.sinopse, preferredStyle: UIAlertControllerStyle.alert)
+        addAlerta.addAction(UIAlertAction(title: "Add Favoritos", style: .default, handler: { (action: UIAlertAction!) in
+            
+            
+        }))
         
-        self.performSegue(withIdentifier: "detalhe", sender: nil)
-        tableView.deselectRow(at: indexPath, animated: true)
-
+        addAlerta.addAction(UIAlertAction(title: "Fechar", style: .cancel, handler: nil))
+        present(addAlerta, animated: true, completion: nil)
+        self.table.deselectRow(at: indexPath, animated:true)
+        
     }
-    
-//    func getFilmes() {
-//        let service = FilmesService()
-//        service.getFilmes(callback: {(filmes: Array<Filme>, error: NSError!) in
-//            if (error != nil) {
-//                //Alerta.alerta("Erro", mensagem: "erro", viewController: self)
-//            } else {
-//                self.filmes = filmes
-//                self.table.reloadData()
-//                
-//            }
-//        } as! (Array<Filme>, NSError?) -> Void)
-//    }
-
-
-
     
 }
