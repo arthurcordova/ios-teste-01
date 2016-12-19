@@ -54,6 +54,10 @@ class FilmesViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Linha \(indexPath.row).")
+        
+        self.performSegue(withIdentifier: "detalhe", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
+
     }
     
 //    func getFilmes() {
